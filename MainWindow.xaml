@@ -1,0 +1,75 @@
+﻿<Window x:Class="Ratatuille.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ratatuille"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Height="842" 
+        Width="430"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent">
+    <Grid>
+        <!-- Window border-->
+        <Border Background="#161616" CornerRadius="30"/>
+        <!-- Circles-->
+        <Grid>
+            <Grid.Effect>
+                <BlurEffect Radius="20" KernelType="Box"/>
+            </Grid.Effect>
+            <Border Width="226" Height="228" Background="#747D81" CornerRadius="200,200,200,200">
+                <Border.Effect>
+                    <BlurEffect Radius="200"/>
+                </Border.Effect>
+            </Border>
+            <Border Width="226" Height="228" Background="#5B62A3" CornerRadius="200,200,200,200" Margin="169,576,35,38" Opacity="0.7">
+                <Border.Effect>
+                    <BlurEffect Radius="200"/>
+                </Border.Effect>
+            </Border>
+            <Border Width="226" Height="228" Background="#5B62A3" CornerRadius="200,200,200,200" Margin="42,28,162,586" Opacity="0.7">
+                <Border.Effect>
+                    <BlurEffect Radius="200"/>
+                </Border.Effect>
+            </Border>
+        </Grid>
+        <!--Button next-->
+        <Border Width="153" Height="41" Background="#5B62A3" CornerRadius="34,34,34,34" BorderBrush="#FFD7C18B" BorderThickness="1,1,1,1" Margin="245,30,32,771" IsEnabled="False">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Пропустить" Foreground="#FFFFFF" FontSize="16"/>
+            </StackPanel>
+        </Border>
+        <!--Bottn dont menu-->
+        <Border Background="#72ABADB3" Width="430" Height="90" VerticalAlignment="Bottom" CornerRadius="50,50,30,30" Opacity="0.15" BorderBrush="White" BorderThickness="1,1,1,0" IsEnabled="False">
+            <Border.Effect>
+                <DropShadowEffect Opacity="0.25"/>
+            </Border.Effect>
+        </Border>
+        <Image Width="285" Height="293" Source="/imeges/mause1.png" Margin="-28,228,173,320" />
+        <TextBox HorizontalAlignment="Left" 
+                 Margin="206,253,0,0" 
+                 TextWrapping="Wrap"
+                 FontSize="24"
+                 Text="Я Реми - твой персональный помощник в выборе блюд" 
+                 VerticalAlignment="Top" Width="204" 
+                  Background="Transparent" Foreground="#FFFFFDFD" BorderBrush="#00ABADB3"/>
+        <Image Width="400" Height="170" Source="/imeges/Vector 1.png" Margin="0,136,0,-136"/>
+        <TextBox HorizontalAlignment="Center" 
+         Margin="0,655,0,0" 
+         TextWrapping="Wrap"
+         FontSize="24"
+         Text="Чего бы ты хотел?" 
+         VerticalAlignment="Top" Width="214" 
+         Background="Transparent" Foreground="#FFFFFDFD" BorderBrush="#00ABADB3"/>
+        <Image Width="30" Height="28" Source="/imeges/addicon.png" Margin="70,784,330,30"/>
+        <Image Width="40" Height="30" Source="/imeges/listicon.png" Margin="320,785,70,27"/>
+        <Border Width="70" Height="70" Background="#72000000" BorderBrush="#FFD7C18B" BorderThickness="3,3,3,3" CornerRadius="100,100,100,100" Margin="180,765,180,7">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="R" Foreground="#FFFFFDFD" FontSize="24"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
